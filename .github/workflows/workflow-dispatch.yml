@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Setup K8s config yamls
+      - name: Workflow Dispatch demo
         env:
           MESSAGE: ${{ github.event.inputs.MESSAGE }}
         with:  
