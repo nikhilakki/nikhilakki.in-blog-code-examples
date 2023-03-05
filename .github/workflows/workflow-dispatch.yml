@@ -10,9 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Workflow Dispatch demo
+      - run: |
+          echo "$MESSAGE"  
         env:
           MESSAGE: ${{ github.event.inputs.MESSAGE }}
-        with:  
-          run: |
-            echo "${{ env.MESSAGE  }}"
