@@ -37,4 +37,4 @@ jobs:
 ```
 ![GitHub Action screenshot](GitHub%20Actions%20101%20sample.png)
 
-[Article link](https://nikhilakki.in)
+[Article link](https://nikhilakki.in/github-series-actions-101)
