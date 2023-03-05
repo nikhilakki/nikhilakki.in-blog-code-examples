@@ -7,12 +7,12 @@ on:
         description: "Enter Message"
         required: true
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Workflow Dispatch demo
         env:
           MESSAGE: ${{ github.event.inputs.MESSAGE }}
         with:  
-          cmd: |
+          run: |
             echo "${{ env.MESSAGE  }}"
