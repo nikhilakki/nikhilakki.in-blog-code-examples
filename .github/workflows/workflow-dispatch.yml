@@ -1,0 +1,19 @@
+name: Workflow Dispatch Demo
+
+on:
+  workflow_dispatch:
+    inputs:
+      MESSAGE:
+        description: "Enter Message"
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup K8s config yamls
+        env:
+          MESSAGE: ${{ github.event.inputs.MESSAGE }}
+        with:  
+          cmd: |
+            echo "${{ env.MESSAGE  }}"
