@@ -1,5 +1,5 @@
 import argparse
-import jokes as j
+from jokes_daily.core import get_joke, parse_joke
 
 
 def main():
@@ -11,8 +11,8 @@ def main():
 
     # parse the arguments
     args = parser.parse_args()
-    joke = j.get_joke(args.single)
-    response = j.parse_joke(joke=joke)
+    joke = get_joke(args.single)
+    response = parse_joke(joke=joke)
     print(response)
 
 
