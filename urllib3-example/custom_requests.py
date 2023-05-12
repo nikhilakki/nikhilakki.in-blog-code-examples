@@ -24,7 +24,16 @@ class CustomRequests:
         response = self.session.request('POST', url, **kwargs)
         return CustomResponse(response)
 
-    # Add more methods as needed
+    def put(self, url, data=None, **kwargs):
+        if data:
+            kwargs['body'] = data
+        response = self.session.request('PUT', url, **kwargs)
+        return CustomResponse(response)
+
+    def delete(self, url, **kwargs):
+        response = self.session.request('DELETE', url, **kwargs)
+        return CustomResponse(response)
+
 
 class CustomResponse:
     def __init__(self, response):
@@ -42,7 +51,6 @@ class CustomResponse:
     def status_code(self):
         return self.response.status
 
-    # Add more properties and methods as needed
 
 if __name__ == "__main__":
     custom_requests = CustomRequests()
