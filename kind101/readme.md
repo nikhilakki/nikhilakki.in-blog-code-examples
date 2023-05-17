@@ -6,6 +6,12 @@
     - [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
     - [Docker](https://nikhilakki.in/preview/640061db28849c00086c2e2d)
     - [Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+- Setup kind cluster
+    ```bash
+    # Make sure docker is running
+    kind create cluster
+    kubectl cluster-info --context kind-kind
+    ```
 - Build container and deploy to Kind
     ```bash
     # Step 1: Build docker image
