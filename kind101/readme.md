@@ -1,9 +1,5 @@
 ## Kind: The Container Connoisseur for K8s Conundrums
 
-[Aritcle link](https://nikhilakki.in/kind-the-container-connoisseur-for-k8s-conundrums)
-
-> Author - [Nikhil Akki](https://nikhilakki.in)
-
 ### How to run?
 
 - [Install Kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
@@ -26,3 +22,8 @@ make expose-local
 - docker v23+
 - kind v0.18+
 - kubectl
+
+
+[Aritcle link](https://nikhilakki.in/kind-the-container-connoisseur-for-k8s-conundrums)
+
+> Author - [Nikhil Akki](https://nikhilakki.in)
