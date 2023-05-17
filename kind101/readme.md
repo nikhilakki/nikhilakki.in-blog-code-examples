@@ -1,4 +1,4 @@
-## Kind: The Container Connoisseur for K8s Conundrums
+## [Kind: The Container Connoisseur for K8s Conundrums](https://nikhilakki.in/kind-the-container-connoisseur-for-k8s-conundrums)
 
 ### How to run?
 
